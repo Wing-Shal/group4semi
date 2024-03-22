@@ -237,8 +237,10 @@ public class MemberController {
 				//e.printStackTrace();
 			}
 			finally {
-				//회원 탈퇴
+				//회원 블락
 				memberDao.deleteMember(loginId);
+				//block 테이블에 탈퇴회원으로 추가
+				memberDao.addDeleteMember(loginId);
 				//로그아웃
 				session.removeAttribute("loginId");
 			}

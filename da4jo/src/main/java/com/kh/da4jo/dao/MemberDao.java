@@ -115,15 +115,20 @@ public class MemberDao {
 		jdbcTemplate.update(sql, data);
 	}
 
-	// 회원탈퇴
+	// 회원탈퇴(상태 변경)
 	public boolean deleteMember(String memberId)
 	{
-		String sql = "delete member where member_id=?";
+		String sql = "UPDATE MEMBER SET MEMBER_BLOCK='Y' WHERE MEMBER_ID=?";
 		Object[] data = { memberId };
 
 		return jdbcTemplate.update(sql, data) > 0;
 	}
-
+	//회원탈퇴(BLOCK테이블에 추가)
+	public boolean addDeleteMember(String memberId) {
+		String sql = "INSERT INTO MEMBER_BLOCK(BLOCK_NO, BLOCK_MEMBER_ID, BLOCK_STATUS, BLOCK_REASON) VALUES("
+				+ "MEMBER_BLOCK_SEQ.NEXTVAL, ?, '탈퇴회원', '탈퇴회원')";
+		return jdbcTemplate.update(sql, memberId) > 0;
+	}
 	// 돈 충전
 	public boolean chargeCredit(String memberId, int credit)
 	{
@@ -191,5 +196,15 @@ public class MemberDao {
 				+ ")";
 		Object[] datas = {memberId, memberId};
 		return jdbcTemplate.queryForObject(sql, int.class, datas);
+	}
+	
+	//block 회원 삭제 구문
+	public void realRealDeleteMember() {
+		String sql = "DELETE FROM MEMBER "
+				+ "WHERE MEMBER_ID IN ("
+				+ "SELECT BLOCK_MEMBER_ID "
+				+ "FROM MEMBER_BLOCK "
+				+ "WHERE BLOCK_TIME <= SYSDATE - INTERVAL '5' YEAR)";
+		jdbcTemplate.update(sql);
 	}
 }
