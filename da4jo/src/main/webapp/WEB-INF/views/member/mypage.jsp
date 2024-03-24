@@ -142,7 +142,9 @@ $(function(){
 			<br><br>
 			<!-- 메뉴바 -->
 			<div class="title title-head">
-				<div>MENU</div>
+				<div>
+					<a class="link" href="/member/mypage">MYPAGE</a>
+				</div>
 			</div>
 			<div class="title title-body">
 				<div class="title-body-main">
