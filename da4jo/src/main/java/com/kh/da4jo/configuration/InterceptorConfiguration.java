@@ -45,7 +45,8 @@ public class InterceptorConfiguration implements WebMvcConfigurer{
 						"/member/mypage",
 						"/board/review/list",
 						"/board/qna/**",
-						"/board/notice/**"
+						"/board/notice/**",
+						"/member/ship/request"
 						)
 					.excludePathPatterns(//인터셉터에서 제외할 페이지
 						"/board/notice/list",
