@@ -2,7 +2,7 @@
 프로젝트명 : 다사조
 프로젝트 설명 : 해외구매/배송대행 서비스하는 홈페이지 개발
 주요 구현기능 : 주문처리 및 관리, 관련 서비스 게시판 구현
-역할 및 담당, 개발환경 등등 notion : https://da4jo-semi.notion.site/11821274da064241a188a5eb987ff5a0?v=dc84b5c035c14a9eadb76f96f2c15cbe
+역할 및 담당, 개발환경 등등 notion : https://wing-shal.notion.site/11821274da064241a188a5eb987ff5a0?v=dc84b5c035c14a9eadb76f96f2c15cbe
 프로젝트 서비스 희망 주소 : /da4jo
 참조한 사이트명과 주소 : 짐패스, https://www.jimpass.com/
 Github : https://github.com/Wing-Shal/Da_4_Group

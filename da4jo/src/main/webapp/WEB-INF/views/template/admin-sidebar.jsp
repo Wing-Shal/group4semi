@@ -53,7 +53,7 @@
 						<a href="${pageContext.request.contextPath}/admin/ship/processList" class="link">배송대행 배송대기</a>
 					</div>
 					<div class="title-body-text">
-						<a href="${pageContext.request.contextPath}/admin/ship/processingList" class="link">구매대행 배송현황</a>
+						<a href="${pageContext.request.contextPath}/admin/ship/processingList" class="link">배송대행 배송현황</a>
 					</div>
 					<div class="title-body-text">
 						<a href="${pageContext.request.contextPath}/admin/ship/completeList" class="link">배송대행 완료목록</a>

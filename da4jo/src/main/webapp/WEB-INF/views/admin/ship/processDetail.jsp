@@ -65,7 +65,7 @@
 	<div class="container inner-container">
 		<div class="content content-head">
 			<div class="content-head-text">
-				<i class="fa-solid fa-user"></i> ${shipSvcDto.shipSvcCustomerId} 님의 구매대행 신청서
+				<i class="fa-solid fa-user"></i> ${shipSvcDto.shipSvcCustomerId} 님의 배송대행 신청서
 			</div>
 		</div>
 		<div class="content content-body">
