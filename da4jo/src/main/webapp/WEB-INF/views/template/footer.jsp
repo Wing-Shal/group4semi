@@ -53,7 +53,7 @@
 				                    truncatedTitle = notice.noticeTitle.substring(0, 25);
 				                }
 				                // 새로운 <a> 요소를 생성하여 공지사항 제목을 포함시킵니다.
-				                var titleLink = $("<a class='link' id='linkNotice'>").attr("href", "/board/notice/detail?noticeNo=" + notice.noticeNo).text(truncatedTitle).css("font-size", "13px");;
+				                var titleLink = $("<a class='link' id='linkNotice'>").attr("href", "${pageContext.request.contextPath}/board/notice/detail?noticeNo=" + notice.noticeNo).text(truncatedTitle).css("font-size", "13px");;
 				                // <li> 요소를 생성하고 타이틀 링크를 하위 요소로 추가합니다.
 				                var listItem = $("<div class='w-100 cell flex-cell'>").append(titleLink);
 				                // 작성일을 오른쪽에 보여줍니다.

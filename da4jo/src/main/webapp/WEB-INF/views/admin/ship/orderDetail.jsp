@@ -66,7 +66,7 @@
 			var weight = $(this).val();
 			$.ajax({
 				type : "POST",// 데이터를 줘야해서 POST로 보내야함
-				url : "/rest/ship/getFee",
+				url : "${pageContext.request.contextPath}/rest/ship/getFee",
 				data : {
 					weight : weight
 				},

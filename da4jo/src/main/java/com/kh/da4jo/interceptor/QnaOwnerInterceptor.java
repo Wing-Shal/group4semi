@@ -36,8 +36,10 @@ public class QnaOwnerInterceptor implements HandlerInterceptor{
 			
 			MemberDto memberDto = memberDao.selectOne(loginId);
 						
-			if(loginLevel != null && loginLevel.equals("관리자") || loginLevel.equals("총관리자"))  {
-				return true;
+			if(loginLevel != null)  {
+				if(loginLevel.equals("관리자") || loginLevel.equals("총관리자")) {
+					return true;
+				}
 			}
 
 			//비밀글인데, 내가 쓴 글이면 통과 아니면 리스트로
@@ -46,7 +48,7 @@ public class QnaOwnerInterceptor implements HandlerInterceptor{
 				if(qnaDto.getQnaWriter().equals(loginId)) {
 					return true;
 				} else {
-					response.sendRedirect("/board/qna/list");
+					response.sendRedirect("/da4jo/board/qna/list");
 				}
 			} else { //비밀글이 아닐때
 				return true;

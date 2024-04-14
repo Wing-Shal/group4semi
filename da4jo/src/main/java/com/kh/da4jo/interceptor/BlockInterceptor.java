@@ -32,7 +32,7 @@ public class BlockInterceptor implements HandlerInterceptor{
 		}
 		else {//블락회원
 			
-			response.sendRedirect("/alert/isBlock");//어디로 보낼지?
+			response.sendRedirect("/da4jo/alert/isBlock");//어디로 보낼지?
 		}
 		return false;
 	}
