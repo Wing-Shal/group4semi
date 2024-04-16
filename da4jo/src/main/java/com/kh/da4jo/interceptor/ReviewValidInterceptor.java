@@ -26,7 +26,7 @@ public class ReviewValidInterceptor implements HandlerInterceptor {
 		if(hasServiceHistory != 0) {
 			return true;
 		} else {
-			response.sendRedirect("/alert/hasntServiceHistory");
+			response.sendRedirect("/da4jo/alert/hasntServiceHistory");
 		}
 		
 		//나머지 차단

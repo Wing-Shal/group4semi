@@ -34,7 +34,7 @@ public class ResignInterceptor implements HandlerInterceptor{
 	    	session.removeAttribute("loginId"); // 세션 값 삭제
 			session.removeAttribute("loginLevel");
 			session.removeAttribute("hasServiceHistory");
-	    	response.sendRedirect("/alert/resignMember");
+	    	response.sendRedirect("/da4jo/alert/resignMember");
 		}
 		return true;
 	}

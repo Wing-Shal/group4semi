@@ -20,7 +20,7 @@ public class MemberInterceptor implements HandlerInterceptor{
 			return true;
 		}
 		else {//회원 아님
-			response.sendRedirect("/member/login");//로그인 페이지로 이동
+			response.sendRedirect("/da4jo/member/login");//로그인 페이지로 이동
 		}
 		return false;
 	}

@@ -175,7 +175,7 @@ $(function(){
         
         if(regex.test(value)) {//비밀번호 형식 검사 
             $.ajax({
-                url : "/rest/member/checkInputPw",
+                url : "${pageContext.request.contextPath}/rest/member/checkInputPw",
                 method : "post",
                 data: {
                     memberPw : value
