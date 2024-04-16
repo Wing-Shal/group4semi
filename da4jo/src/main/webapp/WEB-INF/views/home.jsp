@@ -11,7 +11,7 @@
 <style>
 .swiper {
 	width: 1140px;
-	height: 360px;
+	height: 400px;
 }
 
 .head-banner {
