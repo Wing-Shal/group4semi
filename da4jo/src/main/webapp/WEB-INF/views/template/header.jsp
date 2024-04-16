@@ -80,7 +80,7 @@
 }
 
 .head-middle {
- 	height: 80px !important;
+ 	height: 100px !important;
 }
 
 .home>a {
