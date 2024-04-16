@@ -297,6 +297,7 @@
 					</li>
 				</ul>
 			</div>
+		</div>
 		<div class="head-bottom">
 			<div class="nav container">
 				<ul class="menu cell center">
