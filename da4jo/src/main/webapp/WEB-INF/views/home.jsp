@@ -11,7 +11,7 @@
 <style>
 .swiper {
 	width: 1140px;
-	height: 360px;
+	height: 400px;
 }
 
 .head-banner {
@@ -370,7 +370,7 @@
 						</li>
 						<li class="image-wrapper">
 						<a class="link" href="https://www.footlocker.com/" target="_blank">
-							<img src="${pageContext.request.contextPath}/image/us_shop/Foot_locker.jpg">
+							<img src="${pageContext.request.contextPath}/image/us_shop/Foot_Locker.jpg">
 						</a>
 						</li>
 						<li class="image-wrapper">

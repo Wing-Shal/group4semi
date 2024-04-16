@@ -8,7 +8,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>다4조 세미 홈페이지 메인</title>
+<meta property="og.title" content="다4조 세미 프로젝트">
+<meta property="og.description" content="배송/구매대행 서비스">
+<meta property="og.image" content="${pageContext.request.contextPath}/image/logotemplatecut.png">
 
 <!-- 구글 폰트 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -78,7 +80,7 @@
 }
 
 .head-middle {
- 	height: 80px !important;
+ 	height: 100px !important;
 }
 
 .home>a {
@@ -295,6 +297,7 @@
 					</li>
 				</ul>
 			</div>
+		</div>
 		<div class="head-bottom">
 			<div class="nav container">
 				<ul class="menu cell center">

@@ -551,6 +551,10 @@ textarea.tool.tool-fixed {
 }
 
 /* 바 구분선*/
+.contour {
+	padding-right: 10px;
+}
+
 .contour li::after {
     content: "";
     position: absolute;
